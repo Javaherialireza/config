@@ -5,4 +5,4 @@ from .models import Article
 # Create your views here.
 class Articlelist(ListView):
     def get_queryset(self):
-        return Article.objects.all
+        return Article.objects.all()
