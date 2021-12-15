@@ -4,5 +4,6 @@ class Articleserializer(serializers.ModelSerializer):
     class Meta:
         model = Article
         #field = ("title" ,"slug","author","content","publish","status")
-         
-
+        #exclude =("created","updated")
+        fields ="__all__"
+        
